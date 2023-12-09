@@ -7,7 +7,7 @@ const Person = require('./userModal');
 const db = require('./db');
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT||8000;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({ origin: '*' }));

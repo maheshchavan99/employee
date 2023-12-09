@@ -1,7 +1,7 @@
 const mongoose =require("mongoose")
 
 // keep it in env file
-const mongoURL = process.env.MANGOOSE_URL;
+const mongoURL = process.env.MANGOOSE_URL||"mongodb+srv://mahesh636367:Qrhl3FecLq3ExyUg@cluster0.osh0qdu.mongodb.net/mern-rooms";
 mongoose.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
